@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html {
+  height: 100%;
+}
+body {
+  font-family: 'Poppins', serif;
+}
+:where(ul, ol):where([class]) {
+  padding-left: 0;
+}
+body,
+:where(blockquote, figure):where([class]) {
+  margin: 0;
+}
+:where(h1, h2, h3, h4, h5, h6, p, ul, ol, dl):where([class]) {
+  margin-block: 0;
+}
+:where(dd[class]) {
+  margin-left: 0;
+}
+:where(ul[class]) {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.app-header {
+  padding-block: 0.3rem;
+  background-color: #fff;
+  box-shadow: -5px 5px 20px #b8b8b8;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.header-name {
+  font-size: 2rem;
+  color: #5497df;
+}
+.header-links {
+  display: flex;
+  gap: 1.8rem;
+}
+.header-link-a {
+  font-size: 1.1rem;
+  color: #aaa;
+}
+.header-link-a:hover {
+  color: #007bff;
+  transition: 0.5s ease;
+}
+
+.is-active {
+  color: #007bff;
+  border-bottom: 1px solid #007bff;
+}
+
+@media (max-width: 610px) {
+  .header-name {
+    font-size: 1.5rem;
+  }
+  .header-links {
+    gap: 1.2rem;
+  }
+  .header-link-a {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 390px) {
+  .header-name {
+    font-size: 1rem;
+  }
+  .header-links {
+    gap: 1rem;
+  }
+  .header-link-a {
+    font-size: 0.6rem;
+  }
+}
