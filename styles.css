@@ -1,5 +1,7 @@
+/* font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+/* initial settings */
 html {
   height: 100%;
 }
@@ -25,6 +27,12 @@ body,
 a {
   text-decoration: none;
 }
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+/* header styles */
 .app-header {
   padding-block: 0.3rem;
   background-color: #fff;
@@ -50,11 +58,51 @@ a {
   transition: 0.5s ease;
 }
 
+/* this is for li elements */
 .is-active {
   color: #007bff;
   border-bottom: 1px solid #007bff;
 }
 
+/* main section styles */
+.app-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-container {
+  margin-top: 15%;
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
+  padding: 1.4rem 2rem;
+  background-color: #000;
+  border-radius: 10px;
+}
+.main-text {
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.main-text-color {
+  color: #fff;
+  text-decoration: underline;
+}
+.main-button {
+  font-size: 0.9rem;
+  padding: 0.2rem 0.6rem;
+  background-color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+.main-button:hover {
+  background-color: #5497df;
+  color: #fff;
+  transition: 0.2s ease;
+}
+
+/* media (width) */
 @media (max-width: 610px) {
   .header-name {
     font-size: 1.5rem;
@@ -64,6 +112,16 @@ a {
   }
   .header-link-a {
     font-size: 0.7rem;
+  }
+  .main-container {
+    padding: 1rem 1.5rem;
+  }
+  .main-text {
+    font-size: 1rem;
+    margin-bottom: 0.6rem;
+  }
+  .main-button {
+    font-size: 0.7em;
   }
 }
 @media (max-width: 390px) {
@@ -75,5 +133,15 @@ a {
   }
   .header-link-a {
     font-size: 0.6rem;
+  }
+  .main-container {
+    padding: 0.5rem 1rem;
+  }
+  .main-text {
+    font-size: 0.7rem;
+    margin-bottom: 0.3rem;
+  }
+  .main-button {
+    font-size: 0.5rem;
   }
 }
