@@ -12,23 +12,27 @@
       <h1 class="header-name">Color flipper</h1>
       <ul class="header-links">
         <li class="header-link">
-          <a class="header-link-a" href="#">simple</a>
+          <button class="header-link-button is-active" id="rgb-color">
+            rgb
+          </button>
         </li>
         <li class="header-link">
-          <a class="header-link-a is-active" href="#">hex</a>
+          <button class="header-link-button" id="hex-color">hex</button>
         </li>
         <li class="header-link">
-          <a class="header-link-a" href="#">hsl</a>
+          <button class="header-link-button" id="hsl-color">hsl</button>
         </li>
       </ul>
     </header>
     <main class="app-main">
       <div class="main-container">
         <div class="main-text">
-          Background color is: <span class="main-text-color">#fsafsdf</span>
+          Background color is:
+          <span class="main-text-color" id="color-display">#ffffff</span>
         </div>
         <button class="main-button">Click me</button>
       </div>
     </main>
+    <script src="./script.js"></script>
   </body>
 </html>
